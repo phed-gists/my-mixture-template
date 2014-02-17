@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{% block title %}Mixture + Compass{% endblock %}</title>
-        {{ "your-project.css" | asset_url | stylesheet_tag }}
-        <!-- TODO: Complete this project :) -->
-    </head>
-    <body class="wrapper">
-        {% include "navigation" %}
-        <div class="container">
-            {% block content %}{% endblock %}
-        </div>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}Mixture + Compass{% endblock %}</title>
+		{{ "public/styles/application.css" | asset_url | stylesheet_tag }}
+		<!-- TODO: Complete this project :) -->
+	</head>
+	<body class="wrapper">
+		{% include "navigation" %}
+		<div class="container">
+			{% block content %}{% endblock %}
+		</div>
+	{{ "libraries/jquery-1.11.0.min.js" | asset_url | script_tag}}
+	{{ "application.js" | asset_url | script_tag }}
+	</body>
 </html>
