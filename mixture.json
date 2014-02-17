@@ -4,7 +4,7 @@
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": "public",
-  "preprocessorScriptOutput": "public/scripts",
+  "preprocessorScriptOutput": "public/javascripts",
   "preprocessorStyleOutput": "public/styles",
   "projectDescription": "Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.",
   "projectName": "mixture-compass",
